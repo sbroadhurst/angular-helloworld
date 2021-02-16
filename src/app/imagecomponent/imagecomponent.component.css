@@ -1,0 +1,16 @@
+h3 {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 100px;
+}
+
+.logo {
+  width: fit-content;
+  max-width: 70vw;
+}

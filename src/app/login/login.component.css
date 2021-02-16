@@ -1,0 +1,21 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-image {
+  width: fit-content;
+  max-width: 400px;
+}
+
+.form {
+  justify-content: center;
+  text-align: center;
+}
+
+.form-footer {
+  justify-content: center;
+  text-align: center;
+}
