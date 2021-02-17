@@ -1,0 +1,46 @@
+.container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.zipcodeArea {
+  padding-bottom: 20px;
+}
+
+.card {
+  min-width: 310px;
+  max-width: 512px;
+  background-color: whitesmoke;
+  box-shadow: 5px 10px 15px 2px #888888;
+}
+
+.tempertatures {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.temperature-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  box-shadow: inset 0px -10px 25px lightskyblue, 0px 5px 5px #888888;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.temperture-desc {
+  font-size: 1.25em;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.temperture-number {
+  font-size: 1em;
+  font-weight: 400;
+}

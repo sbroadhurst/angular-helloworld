@@ -11,6 +11,8 @@ import { FormComponentComponent } from './form-component/form-component.componen
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { WeatherComponent } from './weather/weather.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,9 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
+    WeatherComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
