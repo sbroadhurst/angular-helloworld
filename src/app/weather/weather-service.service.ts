@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { WeatherData } from './weather.component';
+import { weatherapi } from '../../environments/weatherapi.environment';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +12,7 @@ export class WeatherService {
 
   getWeather(zipcode: string) {
     return this.http.get<WeatherData>(
-      `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=imperial&appid=36f8995788d170efb4c9934423619753`
+      `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=imperial&appid=${weatherapi.weatherapi.apiKey}`
     );
   }
 }
