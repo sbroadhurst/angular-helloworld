@@ -13,6 +13,18 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { WeatherComponent } from './weather/weather.component';
 import { HttpClientModule } from '@angular/common/http';
+import {
+  SocialLoginModule,
+  GoogleLoginProvider,
+  SocialAuthService,
+  SocialAuthServiceConfig,
+} from 'angularx-social-login';
+import { GoogleLoginButtonComponent } from './google-login-button/google-login-button.component';
+
+import { ThemeModule } from './theme/theme.module';
+import { lightTheme } from './theme/theme-light';
+import { darkTheme } from './theme/theme-dark';
+import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +37,37 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     HomeComponent,
     WeatherComponent,
+    GoogleLoginButtonComponent,
+    ThemeSliderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    SocialLoginModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'light',
+    }),
+  ],
+  providers: [
+    SocialAuthService,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: true,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '1067299457551-l3qrsr51dls4o94tg1fskmpu1ital47a.apps.googleusercontent.com'
+            ),
+          },
+        ],
+      } as SocialAuthServiceConfig,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

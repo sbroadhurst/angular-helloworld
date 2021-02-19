@@ -13,9 +13,10 @@
 
   <div class="card" style="width: 50vw">
     <div class="card-body">
-      <h5 class="card-title">{{ weatherData.name }}</h5>
+      <h5 class="card-title">{{ weatherData?.name }}</h5>
+
       <p class="card-text">
-        {{ weatherData.weather[0].description | titlecase }}
+        {{ weatherData?.weather[0].description | titlecase }}
       </p>
     </div>
     <img class="card-img" [src]="icon" alt="Card image cap" />
@@ -24,21 +25,21 @@
       <div class="temperature-stats">
         <div class="temperture-desc">Temp</div>
         <div class="temperature-number">
-          {{ weatherData.main.temp | number: "1.0-0" }}<sup>° </sup>F
+          {{ weatherData?.main.temp | number: "1.0-0" }}<sup>° </sup>F
         </div>
       </div>
 
       <div class="temperature-stats">
         <div class="temperture-desc">Feels Like</div>
         <div class="temperature-number">
-          {{ weatherData.main.feels_like | number: "1.0-0" }}<sup>° </sup>F
+          {{ weatherData?.main.feels_like | number: "1.0-0" }}<sup>° </sup>F
         </div>
       </div>
 
       <div class="temperature-stats">
         <div class="temperture-desc">Humidity</div>
         <div class="temperature-number">
-          {{ weatherData.main.humidity | number: "1.0-0" }}<sup>° </sup>F
+          {{ weatherData?.main.humidity | number: "1.0-0" }}<sup>° </sup>F
         </div>
       </div>
     </div>
