@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MaterialModule } from './material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +14,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { WeatherComponent } from './weather/weather.component';
-import { HttpClientModule } from '@angular/common/http';
 import {
   SocialLoginModule,
   GoogleLoginProvider,
@@ -25,6 +26,8 @@ import { ThemeModule } from './theme/theme.module';
 import { lightTheme } from './theme/theme-light';
 import { darkTheme } from './theme/theme-dark';
 import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImagePageComponent } from './image-page/image-page.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,7 @@ import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
     WeatherComponent,
     GoogleLoginButtonComponent,
     ThemeSliderComponent,
+    ImagePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,8 @@ import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
       themes: [lightTheme, darkTheme],
       active: 'light',
     }),
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [
     SocialAuthService,

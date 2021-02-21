@@ -1,0 +1,31 @@
+.example-card {
+  background-color: var(--cardBackgroundColor);
+  width: 20rem;
+  margin: 10px;
+  max-width: 300px;
+  color: var(--cardTextColor);
+}
+
+.subtitle {
+  color: var(--cardTextColor);
+}
+
+.example-header-image {
+  /* background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg"); */
+  background-size: cover;
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}

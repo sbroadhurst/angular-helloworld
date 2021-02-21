@@ -6,5 +6,7 @@ export const darkTheme: Theme = {
     '--background': '#323035',
     '--textColor': '#fff',
     '--weatherCardTextColor': '#000000',
+    '--cardBackgroundColor': '#494949',
+    '--cardTextColor': 'white',
   },
 };

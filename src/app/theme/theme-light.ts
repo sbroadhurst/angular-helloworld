@@ -5,5 +5,7 @@ export const lightTheme: Theme = {
   properties: {
     '--background': '#ffffff',
     '--textColor': '#000000',
+    '--cardBackgroundColor': 'whitesmoke',
+    '--cardTextColor': 'black',
   },
 };
