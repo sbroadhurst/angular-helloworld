@@ -28,7 +28,10 @@ import { darkTheme } from './theme/theme-dark';
 import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagePageComponent } from './image-page/image-page.component';
-import { DogDialogComponent } from './dog-dialog/dog-dialog.component';
+import {
+  DogDialog,
+  DogDialogComponent,
+} from './dog-dialog/dog-dialog.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,7 @@ import { DogDialogComponent } from './dog-dialog/dog-dialog.component';
     ThemeSliderComponent,
     ImagePageComponent,
     DogDialogComponent,
+    DogDialog,
   ],
   imports: [
     BrowserModule,
