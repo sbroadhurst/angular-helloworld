@@ -22,7 +22,7 @@ export class DogsService {
       avatarImage:
         'https://1.bp.blogspot.com/-hVF5RI-2rZY/TiiAL3wfJkI/AAAAAAAAC9Y/cEYTgkz67Ro/s1600/sgr11722.jpg',
       mainImage:
-        'https://lh3.googleusercontent.com/proxy/HZBpReloGt4N6uQTt7iV5d5_qS6sdr8B70--65570ZTsjdXusr7iq31jW1U8_hTI_pQ3j6O4e6_ZP9O_YJExFvXhEO0yKUON8lwkD5JK4HPjn2Ftz7kpeUlOvSsuZ8TBI79uQg',
+        'https://welovedoodles.com/wp-content/uploads/2021/01/Golden-Retrievers-New-York-300x240.jpg',
     },
     {
       name: 'American Pitbull',
@@ -40,7 +40,7 @@ export class DogsService {
       description:
         'The German shepherd dog is a herding breed known for its courage, loyalty and guarding instincts. This breed makes an excellent guard dog, police dog, military dog, guide dog for the blind and search and rescue dog. For many families, the German shepherd is also a treasured family pet.',
       avatarImage:
-        'https://lh3.googleusercontent.com/proxy/F3Ca4xMBE7RMwWuvLvp8EiUJsr_AUxPEjRepr9Mrvz8owN1t_D2eJbYWP-Rg2qVFxH5gBURrC-JkM8d_-WBY_emY5bc35n8_EBqv1SgbAfVKQqlm',
+        'https://i.pinimg.com/736x/d2/69/d8/d269d8d35769bf265c6288ce5a0b2d3b.jpg',
       mainImage: 'https://www.pedigreedatabase.com/pictures/2549253.jpg',
     },
   ];

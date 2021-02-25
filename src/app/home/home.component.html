@@ -21,8 +21,16 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
+        <app-dog-dialog
+          title="Ugly Dog Dialog"
+          text="You are wrong! This is a cute dog!"
+          buttonText="Ugly"
+        ></app-dog-dialog>
+        <app-dog-dialog
+          title="Cute Dog Dialog"
+          text="You are right! This is a cute dog!"
+          buttonText="Cute"
+        ></app-dog-dialog>
       </mat-card-actions>
     </mat-card>
   </div>
