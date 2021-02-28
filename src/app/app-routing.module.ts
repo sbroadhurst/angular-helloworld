@@ -5,12 +5,14 @@ import { LoginComponent } from './login/login.component';
 import { WeatherComponent } from './weather/weather.component';
 import { ImagePageComponent } from './image-page/image-page.component';
 import { FormComponentComponent } from './form-component/form-component.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'form', component: FormComponentComponent },
   { path: 'weather', component: WeatherComponent },
   { path: 'images', component: ImagePageComponent },
+  { path: 'carousel', component: CarouselComponent },
 ];
 
 @NgModule({

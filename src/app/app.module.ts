@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './submodules/material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +32,7 @@ import {
   DogDialog,
   DogDialogComponent,
 } from './dog-dialog/dog-dialog.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import {
     ImagePageComponent,
     DogDialogComponent,
     DogDialog,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
